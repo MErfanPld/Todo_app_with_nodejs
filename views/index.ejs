@@ -1,0 +1,12 @@
+<%- include ('./includes/head.ejs') %> 
+        <br/>
+        <br/>
+        <%- include ('./includes/todoForm.ejs') %>
+            <div class="mx-auto w-50 mb-3 alert alert-success row">
+                <p class="d-inline col">کارهای انجام شده : <span class="badge badge-success badge-pill"><%= completedTodos  %> </span></p>
+                <p class="d-inline col">کارهای باقی مانده امروز : <span class="badge badge-warning badge-pill"><%= remainingTodos  %></span></p>
+            </div>
+            <%- include ('./includes/todo.ejs') %> 
+        </div>
+    </body>
+</html>
